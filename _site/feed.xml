@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://devmellow.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://devmellow.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://devmellow.github.io//" rel="alternate" type="text/html" /><updated>2017-09-28T20:46:49-05:00</updated><id>https://devmellow.github.io//</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Estructura de ramas para cada repositorio</title><link href="https://devmellow.github.io//readability-post/" rel="alternate" type="text/html" title="Estructura de ramas para cada repositorio" /><published>2017-09-28T00:00:00-05:00</published><updated>2017-09-28T00:00:00-05:00</updated><id>https://devmellow.github.io//readability-post</id><content type="html" xml:base="https://devmellow.github.io//readability-post/">&lt;h1 id=&quot;flujo-de-trabajo-workflow&quot;&gt;Flujo de trabajo (Workflow)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-05T19:52:12-05:00</updated><id>http://localhost:4000/</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Estructura de ramas para cada repositorio</title><link href="http://localhost:4000/readability-post/" rel="alternate" type="text/html" title="Estructura de ramas para cada repositorio" /><published>2017-09-28T00:00:00-05:00</published><updated>2017-09-28T00:00:00-05:00</updated><id>http://localhost:4000/readability-post</id><content type="html" xml:base="http://localhost:4000/readability-post/">&lt;h1 id=&quot;flujo-de-trabajo-workflow&quot;&gt;Flujo de trabajo (Workflow)&lt;/h1&gt;
 &lt;p&gt;El flujo propuesto de trabajo para el equipo en cuánto al uso de los repositorios es el propuesto por Github, este flujo es llamado
 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;GithubFlow&lt;/a&gt;. Este flujo propone el usar &lt;em&gt;forks&lt;/em&gt; y una única rama &lt;em&gt;master&lt;/em&gt;.
 El flujo que usaremos propone que cada miembro del equipo tenga su &lt;em&gt;fork&lt;/em&gt; y en vez de usar una rama &lt;em&gt;master&lt;/em&gt; en cada proyecto, este tenga 2, &lt;em&gt;master&lt;/em&gt; y &lt;em&gt;staging&lt;/em&gt;.&lt;/p&gt;
@@ -16,4 +16,61 @@ Solo se debe hacer un &lt;em&gt;merge&lt;/em&gt; sobre esta rama cuándo se haya
 
 &lt;h2 id=&quot;rama-staging-desarrollo&quot;&gt;Rama &lt;em&gt;staging&lt;/em&gt; (Desarrollo)&lt;/h2&gt;
 &lt;p&gt;La rama de staging sirve como un ambiente en donde se integran todos los PR de los integrantes del equipo y que a su vez sirve como base para todos los cambios y tareas que se deben realizar.
-Todos los integrantes deben basar sus cambios en esta rama.&lt;/p&gt;</content><category term="github" /><category term="workflow" /><category term="rules" /><summary type="html">Como estructurar las ramas en los repositorios de github y que workflow usar</summary></entry></feed>
+Todos los integrantes deben basar sus cambios en esta rama y deben enviar todos sus PR hacia esta rama a menos que sea necesario enviarlo hacia otra rama pero esto depende del lider del proyecto ó área.
+A esta rama siempre se estarán integrando cambios una vez aprobados y probados por el lider o los revizores. Una vez integrado algún cambio y gracias al flujo de integración continua este cambio se desplegará hacia el ambiente de desarrollo o (stage) para que pueda ser validado por el cliente.&lt;/p&gt;
+
+&lt;h2 id=&quot;pull-request-pr&quot;&gt;&lt;em&gt;Pull Request&lt;/em&gt; (PR)&lt;/h2&gt;
+&lt;p&gt;Todos los PR’s deben ir hacia la rama &lt;em&gt;staging&lt;/em&gt;. Hay ciertas reglas que hay que seguir en la creación de un PR, estas en resumen son:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Deben ir bien documentados
+    &lt;ul&gt;
+      &lt;li&gt;Debe explicar el problema que quiere resolver&lt;/li&gt;
+      &lt;li&gt;Deben contener imágenes de lo que se hizo
+        &lt;ul&gt;
+          &lt;li&gt;Antes y después&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;Deben explicar el procedimiento que llevarón a cabo para resolver el problema&lt;/li&gt;
+      &lt;li&gt;Debe contener las instrucciones para que el revizor pueda llevar a cabo la solución en su ambiente local.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Deben pertenecer a un milestone&lt;/li&gt;
+  &lt;li&gt;Deben tener un asignado y revisores, en la mayoria de los casos los revisores son los líderes de área pero en determinado caso puede tambien pertenecer a otra área.
+&lt;img src=&quot;/assets/uploads/2017/10/pull_request_1.png&quot; alt=&quot;Pull Request&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;integración-a-master&quot;&gt;Integración a master&lt;/h2&gt;
+&lt;p&gt;Una vez que pasó un periodo de tiempo en el que se efectuarón pruebas internas y con el cliente es tiempo de pasar a producción, si recordamos que todo lo que este en la rama master
+se es lo que debe estar en el ambiente de producción entonces lo que haremos es hacer un PR de la rama &lt;em&gt;staging&lt;/em&gt; hacia la rama &lt;em&gt;master&lt;/em&gt;. Esto se hará en el caso de un plan de despliegues programados un día especifico de la semana (que no sea viernes) a una hora específica, esto obviamente acordado anteriormente con el cliente. En otro caso se deberá tratar de hacerlo no mas de 2 veses a la semana, el objetivo es tratar de llevar un seguimiento de lo que se desliega, en el caso de hacerlo un mayor número de veses esto se perdería.&lt;/p&gt;
+
+&lt;p&gt;La razón de contar con 2 despliegues es debido a que puede que surga un imprevisto y debamos desplegar una segunda vez. Se trata de hacer un despliegue por periodo de tiempo acordado ya sea &lt;em&gt;sprint&lt;/em&gt;, &lt;em&gt;fase&lt;/em&gt; o &lt;em&gt;módulo&lt;/em&gt;, lo que es lo mismo un despliegue por milestone programado.&lt;/p&gt;
+
+&lt;p&gt;El PR de integración debe de tener las siguientes caracteristicas:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;En su descripción deberá ir el link del milestone al que pertenece&lt;/li&gt;
+  &lt;li&gt;En su título debe ir la leyenda &lt;strong&gt;Integration to master&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Deberá tener la etiqueta de &lt;strong&gt;integration&lt;/strong&gt;
+&lt;img src=&quot;/assets/uploads/2017/10/label_1.png&quot; alt=&quot;Pull Request&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Deberá asignarse al menos a un revisor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;milestones&quot;&gt;Milestones&lt;/h2&gt;
+&lt;p&gt;Los milestones son un feature de Github que permite envolver o englobar algunos PR, esto nos sirve para delimitar que cambios se efectuarón y agregaron al proyecto en un periodo de tiempo.
+&lt;img src=&quot;/assets/uploads/2017/10/milestones_1.png&quot; alt=&quot;Milestones&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;criterios-para-el-uso-de-un-milestone&quot;&gt;Criterios para el uso de un milestone&lt;/h3&gt;
+&lt;p&gt;El uso de milestones en el equipo será para delimitar las tareas que se deban hacer en los periodos de tiempo comprendidos para:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Sprints&lt;/li&gt;
+  &lt;li&gt;Fases&lt;/li&gt;
+  &lt;li&gt;Módulos o features&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Es decir un sprint deberá ocuparse para delimitar los PR de las tareas que comprenden un sprint, este puede ser de 1 a 2 semanas de trabajo dependiendo de la organización del proyecto.&lt;/p&gt;
+
+&lt;p&gt;Tambien se puede considerar una fase para el uso de un milestone por ejemplo la fase de tareas de mantenimiento que comprende de la fecha x a la fecha y.&lt;/p&gt;
+
+&lt;p&gt;Para la creación de un módulo especifico del proyecto podría englobarse en un milestone, es decir dependiendo de la organización manejo del proyecto un feature como &lt;strong&gt;crear el módulo de administracion&lt;/strong&gt;
+tambien podría considerarse como un milestone.&lt;/p&gt;
+
+&lt;p&gt;Abordaremos más a fondo el tema de los milestones en el post de milestones.&lt;/p&gt;</content><category term="github" /><category term="workflow" /><category term="rules" /><summary type="html">Como estructurar las ramas en los repositorios de github y que workflow usar</summary></entry></feed>

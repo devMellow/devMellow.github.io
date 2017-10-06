@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://devmellow.github.io//readability-post/</loc>
+<loc>http://localhost:4000/readability-post/</loc>
 <lastmod>2017-09-28T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://devmellow.github.io//404</loc>
+<loc>http://localhost:4000/404</loc>
 </url>
 <url>
-<loc>https://devmellow.github.io//tags/</loc>
+<loc>http://localhost:4000/tags/</loc>
 </url>
 <url>
-<loc>https://devmellow.github.io//</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>https://devmellow.github.io//posts/</loc>
+<loc>http://localhost:4000/posts/</loc>
 </url>
 <url>
-<loc>https://devmellow.github.io//about/</loc>
+<loc>http://localhost:4000/about/</loc>
 </url>
 <url>
-<loc>https://devmellow.github.io//projects/</loc>
+<loc>http://localhost:4000/projects/</loc>
 </url>
 </urlset>
