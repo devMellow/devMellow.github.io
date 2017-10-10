@@ -1,4 +1,214 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-09T14:12:29-05:00</updated><id>http://localhost:4000/</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Estructura de ramas para cada repositorio</title><link href="http://localhost:4000/readability-post/" rel="alternate" type="text/html" title="Estructura de ramas para cada repositorio" /><published>2017-09-28T00:00:00-05:00</published><updated>2017-09-28T00:00:00-05:00</updated><id>http://localhost:4000/readability-post</id><content type="html" xml:base="http://localhost:4000/readability-post/">&lt;h1 id=&quot;flujo-de-trabajo-workflow&quot;&gt;Flujo de trabajo (Workflow)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-10T18:14:32-05:00</updated><id>http://localhost:4000/</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Como gestionar un proyecto con Teamwork</title><link href="http://localhost:4000/teamwork-workflow/" rel="alternate" type="text/html" title="Como gestionar un proyecto con Teamwork" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>http://localhost:4000/teamwork-workflow</id><content type="html" xml:base="http://localhost:4000/teamwork-workflow/">&lt;h1 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h1&gt;
+&lt;p&gt;Teamwork es la herramienta para gestión de tareas que ocupamos en Teamwork, en esta guia se tratarán la gestión desde 2 perfiles en el equipo,
+la parte administrativa y la del equipo de desarrollo, si bien las 2 conviven en la gestión de trabajo los procesos y responsabilidades son un poco diferentes en
+el flujo de trabajo.&lt;/p&gt;
+
+&lt;p&gt;Se da por hecho que para seguir los pasos de esta guía el lector es un miembro del equipo de Mellow Consulting dado de alta en el Teamwork&lt;/p&gt;
+
+&lt;h1 id=&quot;proyectos&quot;&gt;Proyectos&lt;/h1&gt;
+&lt;p&gt;Todo el equipo de Mellow Consulting debe gestionar el trabajo en tareas de Teamwork, la manera de hacer esto es delimitando el trabajo en &lt;strong&gt;proyectos&lt;/strong&gt;.
+Cada proyecto debe de tener tareas que dividan el trabajo de dicho trabajo. Cada proyecto debe cumplir las siguientes caracteristicas:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Debe tener un grupo de miembros de especialidades diferentes ya sea, diseño, desarrollo, marketing, project managers, etc.&lt;/li&gt;
+  &lt;li&gt;Cada miembro debe de tener un role especifico para su especialidad.&lt;/li&gt;
+  &lt;li&gt;Cada proyecto debe tener un &lt;strong&gt;project manager&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Cada proyecto debe de tener un nombre único que represente y defina su contexto, este nombre debe de ser corto y todos los miembros de consulting deben de identificarlo fácilmente.&lt;/li&gt;
+  &lt;li&gt;Cada proyecto debe de tener tasklist que delimitan un grupo de tareas y que se pueden utilizar como &lt;em&gt;milestone&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;Generalmente los proyectos se definen en el contexto de Mellow Conculting por el cliente para quien es el proyecto.&lt;/li&gt;
+  &lt;li&gt;Cada proyecto debe de tener un responsable por área que este relacionada con el proyecto, esto no limita al número de integrantes por área.&lt;/li&gt;
+  &lt;li&gt;Las tareas de cada deben ser gestionadas principalmente por el &lt;strong&gt;project manager&lt;/strong&gt; así como por los responsables del área.&lt;/li&gt;
+  &lt;li&gt;Los proyectos deben estar a su vez divididos en milestones, estos delimitan un número de tareas que se realizarán en un periodo de tiempo acordado.&lt;/li&gt;
+  &lt;li&gt;Cada proyecto debe tener una vista de &lt;strong&gt;Board&lt;/strong&gt; en donde deben estar las coumnas &lt;em&gt;backlog&lt;/em&gt;, &lt;em&gt;sprint&lt;/em&gt;, &lt;em&gt;in progress&lt;/em&gt;, &lt;em&gt;on validation&lt;/em&gt; y &lt;em&gt;done&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;creación-de-proyectos-en-teamwork&quot;&gt;Creación de proyectos en Teamwork&lt;/h2&gt;
+&lt;p&gt;El miembro debe tener los permisos para la creación de nuevos proyectos.
+Para crear un proyecto y estando dentro del dashboard de Teamwork solo se debe ir a la sección de &lt;strong&gt;proyectos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_1.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Esto nos lleva al dashboard de proyectos en donde veremos los proyectos activos a los que tenemos acceso en la organización.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_2.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;En esta sección podemos ver un botón que nos permitirá agregar un nuevo proyecto.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_3.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Al darle click nos aparecerá un modal en el cuál podremos colocar la información del proyecto en cuestión.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_4.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;agregar-miembros-al-proyecto&quot;&gt;Agregar miembros al proyecto&lt;/h2&gt;
+&lt;p&gt;En todos los proyectos deben estar agregados solo los miembros del equipo que esten trabajando en el. Para agregar a un miembro al proyecto primero debe estar agregado a la organización.
+Una vez dicho esto, para agregar a un miembro al proyecto nos debemos dirijir a el dashboard del proyecto, esto se hace elijiendo el proyecto en cuestión en el panel de projectos.
+Una vez en el dashboard del proyecto podremos ver todas las opciones en el menú, una de ellas es &lt;strong&gt;People&lt;/strong&gt; o &lt;strong&gt;Personas&lt;/strong&gt; (esto puede variar dependiendo de la versión de Teamwork o el lenguaje)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_5.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez en este panel solo se da click en el boton &lt;strong&gt;add people&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_6.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y se abrirá un modal en donde se tendrá que escojer de entre los miembros de la organización cuál es el que debemos agregar.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/projects_7.png&quot; alt=&quot;Projects&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;tareas&quot;&gt;Tareas&lt;/h1&gt;
+&lt;p&gt;Las tareas son la parte fundamental de un proyecto, estas le dan sentido y existencia a un proyecto en Teamwork.&lt;/p&gt;
+
+&lt;p&gt;Las tareas deben cumplir con ciertas caracteristicas en un proyecto, estas son:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Deben de tener solo un responsable a menos que sea una tarea en la que se deba checar por varios miembros del equipo, or ejemplo una revisión o junta&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasks_1.png&quot; alt=&quot;Tasks&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El nombre debe comenzar con una tag entre brackets ([]) y en mayúsculas, esta tag describirá el contexto o sección a la que pertenece la tarea.
+Por ejemplo [LANDING] o [HOME].&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasks_2.png&quot; alt=&quot;Tasks&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El titulo de la tarea debe ser corto pero claro para poderla identtificar&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Se debe agregar una descripción más específica siempre con excepción de que con el título sea claro, el responsable de realizar la tarea siempre puede pedir que la descripción sea más específica
+adjuntando imágenes, archivos, etc.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;La tarea debe pertenecer a un &lt;strong&gt;tasklist&lt;/strong&gt; para que pueda ser agrupado en un &lt;strong&gt;milestone&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasks_3.png&quot; alt=&quot;Tasks&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;La estimación siempre debe ponerla la persona final que realizará la tarea así como la fecha de inicio y fin, se puede sugerir una fecha de inicio y de fin pero no se debe colocar fecha de inicio y fin
+si la tarea no ha sido estimada y valorada por el responsable.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;La prioridad de la tarea también depende de un consenso entre la parte administrativa y el área responsable. Puede haber tareas urgentes pero eso estas se deben ocupar en casos muy extremos.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Estos puntos son los mínimos que debe cumplir una tarea en la plataforma para el equipo.&lt;/p&gt;
+
+&lt;h2 id=&quot;crear-task&quot;&gt;Crear task&lt;/h2&gt;
+
+&lt;p&gt;Aparte de las consideraciones anteriores una tarea tambien puede tener:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Prioridad
+&lt;img src=&quot;/assets/uploads/2017/10/tasklist_5.png&quot; alt=&quot;Tasks&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Fecha de inicio y fecha de fin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasklist_6.png&quot; alt=&quot;Tasks&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tiempo estimado de desarrollo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasks_4.png&quot; alt=&quot;Tasks&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Descripción de la task
+Siempre se debe de describir muy bien una tarea para evitar perdida de tiempo rebotandola entre el responsable y el solicitante, siempre se podrá rebotar una tarea si el ejecutante no la comprende.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Una vez que se tengan estos datos se debe de colocar un responsable de la tarea, este no siempre es el que la va a realizar ya que puede pasar por un lider antes para que este la asigne a alguien de su equipo, esto depende del flujo que se maneje en el área y proyecto.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;crear-tasklist&quot;&gt;Crear &lt;em&gt;tasklist&lt;/em&gt;&lt;/h2&gt;
+&lt;p&gt;Un &lt;strong&gt;tasklist&lt;/strong&gt; sirve para agrupar un conjunto de tareas con un fin en común, este puede ser para:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Delimitar áreas en un desarrollo por ejemplo &lt;em&gt;backend&lt;/em&gt;, &lt;em&gt;design&lt;/em&gt;, etc.&lt;/li&gt;
+  &lt;li&gt;Delimitar un periodo de tiempo; &lt;em&gt;sprint 1&lt;/em&gt;, &lt;em&gt;desarrollo del 5 al 10 de octubre&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;Delimitar alguna fase del proyecto; &lt;em&gt;Fase 1&lt;/em&gt;, &lt;em&gt;ajustes post-entrega&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para crear un &lt;em&gt;tasklist&lt;/em&gt; se debe de estar en el dashboard de un proyecto en la sección de &lt;strong&gt;tasks&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasklist_1.png&quot; alt=&quot;Tasklist&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para añadir un taskslist hay que dar click en el botón de &lt;strong&gt;add tasklist&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasklist_2.png&quot; alt=&quot;Tasklist&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nos saldrá un modal en donde debemos especificar el detalle de la tasklist&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasklist_3.png&quot; alt=&quot;Tasklist&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez creada la tasklist solo hay que arrastrar las tareas que correspondan a ese tasklist, esto depende del fin del tasklist, como lo mencionamos estos
+pueden ser para definir un periodo de tiempo, una fase y área.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/tasklist_4.png&quot; alt=&quot;Tasklist&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;milestones&quot;&gt;Milestones&lt;/h1&gt;
+&lt;p&gt;Los milestones no son más que un grupo de tareas de un proyecto delimitadas en un periodo de tiempo acordado, por ejemplo el proyecto de Juan tiene 20 tareas que estan divididas en
+milestones de 1 semana de duración, el primer milestone corresponde a la creación de la landing page que va del 1 al 5 de enero.
+Hay que tener las siguientes consideraciones para la creación de milestones:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Para la creación de milestones se requiere que primero esten creadas y estimadas las tareas del proyecto por el miembro del equipo que la va a realizar.&lt;/li&gt;
+  &lt;li&gt;Ver la disponibilidad de tiempo que el integrante o integrantes del equipo responsables de esas tareas ya que si contamos con que una tarea esta estimada en 8 horas (un día laboral)
+puede que el miembro del equipo solo este programado para dedicarle 4 horas (dos días laborales) a esa tarea. Por eso es importante estimar las tareas en un principio y reguntar por la
+disponibilidad de tiempo de los equipos para ese proyecto, esto con el fin de calcular mejor el sprint.
+La operación es fácil, con tareas estimadas y disponibilidad de los equipos se delimitan sprints que se adecuen a la disponibilidad de tiempo de los equipos.&lt;/li&gt;
+  &lt;li&gt;No olvidar que las tareas tienen una duración &lt;strong&gt;estimada&lt;/strong&gt;, en realidad cuándo se trata con trabajos como los que el equipo de Mellow Consulting trabaja (marketing, desarrollo y diseño)
+se debe considerar siempre los factores humanos del equipo como la concentración, enfermedad, motivación, etc. Una estimación también esta directamente relacionada a la experiencia de quien
+la va a realizar.&lt;/li&gt;
+  &lt;li&gt;Un milestone debe tener una fecha de inicio y fin, esto depende del cálculo de la disponibilidad de los integrantes contra las horas estimadas en ese periodo de tiempo.&lt;/li&gt;
+  &lt;li&gt;Siempre debe haber un producto o &lt;strong&gt;entregable&lt;/strong&gt; funcional al final de cada milestone, es decir la conclución de un milestone siempre debe ser algo funcional que el cliente final pueda usar, pensemos que los milestones deben ser calculados sobre un &lt;strong&gt;mínimo producto viable&lt;/strong&gt; &lt;em&gt;(MVP)&lt;/em&gt;. No hay excusa al final de cada milestone siempre debemos entregar algo que el usuario final pueda usar.&lt;/li&gt;
+  &lt;li&gt;Un milestone debe tener una tasklist y una tasklist debe pertenecer a un milestone&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;crear-un-milestone&quot;&gt;Crear un milestone&lt;/h2&gt;
+&lt;p&gt;Para crear un milestone se debe estar en el dashboard del proyecto en cuestión.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/milestones_1.png&quot; alt=&quot;Milestones&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/milestones_2.png&quot; alt=&quot;Milestones&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Damos click en el boton &lt;em&gt;add milestone&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/milestones_3.png&quot; alt=&quot;Milestones&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Se nos abrirá un modal en el que especificaremos los detalles del milestone, para este se deben de tener estas consideraciones.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;En caso de que el milestone pertenezca a una &lt;strong&gt;fase de desarrollo&lt;/strong&gt; se deberá colocar un titulo parecido a: &lt;strong&gt;Fase: [nombre de la fase]&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;En caso de que el milestone pertenezca a un &lt;strong&gt;periodo de tiempo&lt;/strong&gt; se deberá colocar un título como: &lt;strong&gt;Desarrollo del [dia de inicio] hasta el [día de fin] de [mes]&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;En caso de que el milestone pertenezca a un &lt;strong&gt;área&lt;/strong&gt; del equipo este deberá colocar un título como: &lt;strong&gt;[AREA] hasta el [dia de fin] de [mes de fin]&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;También se debe especificar la fecha de fin del milestone&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/milestones_4.png&quot; alt=&quot;Milestones&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Al final tambien se debe agregar una tasklist al milestone&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/uploads/2017/10/milestones_5.png&quot; alt=&quot;Milestones&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;flujo-de-trabajo-en-teamwork&quot;&gt;Flujo de trabajo en teamwork&lt;/h1&gt;
+
+&lt;p&gt;Una vez vistos los puntos anteriores ahora debemos crear un flujo de trabajo entre las áreas del equipo en un proyecto, en resumen es el siguiente.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;El &lt;strong&gt;solicitante&lt;/strong&gt; crea la(s) tarea(s) con una descripción clara de lo que se debe realizar, coloca como &lt;strong&gt;responsable&lt;/strong&gt; ya sea al lider del área a quien va dirigida la tarea o al responsable directamente,
+esto depende del flujo acordado para el proyecto.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;El &lt;strong&gt;responsable&lt;/strong&gt; coloca en la tarea sus comentarios si es que los hay y estima la tarea, en caso de que no quede claro lo que se debe realizar en la tarea debe colocar sus comentarios y cambiar el responsable de la tarea por la persona que le tenga que resolver esas dudas. En el caso de que haya dudas se entra en un ciclo de comentarios en la tarea hasta que estos se resuelvan y se pueda estimar la tarea.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Una vez estimada el solicitante pone sus comentarios, la coloca en un tasklist, asigna un milestone y devuelve cambiando el responsable de a tarea al área que la va a ejecutar.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;El área ejecutante deberá realizar las tareas y colocar comentarios en caso de tener obstáculos, reestimar la tarea, terminarla, desplegarla, etc.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><category term="consulting" /><category term="guide" /><category term="teamwork" /><summary type="html">Como gestionar las tareas de un proyecto con Teamwork para el equipo de Mellow Consulting</summary></entry><entry><title type="html">Estructura de ramas para cada repositorio</title><link href="http://localhost:4000/mellow-workflow/" rel="alternate" type="text/html" title="Estructura de ramas para cada repositorio" /><published>2017-09-28T00:00:00-05:00</published><updated>2017-09-28T00:00:00-05:00</updated><id>http://localhost:4000/mellow-workflow</id><content type="html" xml:base="http://localhost:4000/mellow-workflow/">&lt;h1 id=&quot;flujo-de-trabajo-workflow&quot;&gt;Flujo de trabajo (Workflow)&lt;/h1&gt;
 &lt;p&gt;El flujo propuesto de trabajo para el equipo en cuánto al uso de los repositorios es el propuesto por Github, este flujo es llamado
 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;GithubFlow&lt;/a&gt;. Este flujo propone el usar &lt;em&gt;forks&lt;/em&gt; y una única rama &lt;em&gt;master&lt;/em&gt;.
 El flujo que usaremos propone que cada miembro del equipo tenga su &lt;em&gt;fork&lt;/em&gt; y en vez de usar una rama &lt;em&gt;master&lt;/em&gt; en cada proyecto, este tenga 2, &lt;em&gt;master&lt;/em&gt; y &lt;em&gt;staging&lt;/em&gt;.&lt;/p&gt;
