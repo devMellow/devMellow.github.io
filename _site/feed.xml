@@ -1,4 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-10-10T18:14:32-05:00</updated><id>http://localhost:4000/</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Como gestionar un proyecto con Teamwork</title><link href="http://localhost:4000/teamwork-workflow/" rel="alternate" type="text/html" title="Como gestionar un proyecto con Teamwork" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>http://localhost:4000/teamwork-workflow</id><content type="html" xml:base="http://localhost:4000/teamwork-workflow/">&lt;h1 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://devmellow.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://devmellow.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://devmellow.github.io//" rel="alternate" type="text/html" /><updated>2018-01-03T13:30:39-06:00</updated><id>https://devmellow.github.io//</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Convenciones para ramas, commits y PR</title><link href="https://devmellow.github.io//commits_and_PR/" rel="alternate" type="text/html" title="Convenciones para ramas, commits y PR" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>https://devmellow.github.io//commits_and_PR</id><content type="html" xml:base="https://devmellow.github.io//commits_and_PR/">&lt;h1 id=&quot;ramas&quot;&gt;Ramas&lt;/h1&gt;
+&lt;p&gt;Siguiendo el flujo de desarrollo que se basa en github flow en donde se crea un fork del proyecto y se hacen ramas de donde se sacan los PR el nombre de las ramas que
+se debe seguir en el equpo de desarrollo es el siguiente.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;numero&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;de&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;la&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;tarea&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;en&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;teamwork&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;descripcion-corta-de-la-tarea-en-ingles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;ejemplo&quot;&gt;Ejemplo&lt;/h2&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1234578-add-readme-file
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Es decir dependiendo para cada tarea se debe crear una rama con esta especificación, esta puede salir de &lt;code class=&quot;highlighter-rouge&quot;&gt;staging&lt;/code&gt; o de &lt;code class=&quot;highlighter-rouge&quot;&gt;QA&lt;/code&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;commits&quot;&gt;Commits&lt;/h1&gt;
+&lt;p&gt;Para los commits también se debe seguir un patron y algunas convenciones. Cada commit debe tener una descripción y el debe contener únicamente los cambios y archivos
+que definan la descripción, por ejemplo si modifique alguna descripción en el &lt;code class=&quot;highlighter-rouge&quot;&gt;README.md&lt;/code&gt; un ejemplo de commit será el siguiente.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;Change requirements for install on README&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;casos-especiales-de-mensaje&quot;&gt;Casos especiales de mensaje&lt;/h2&gt;
+&lt;p&gt;Hay algunos casos en los cuales se requiere una meta etiqueta en el mensaje del commit, estas son:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[WIP]&lt;/code&gt;: Esta se ocupa para delimitar que ese commit en especifico contiene cambios que no se han concluidoi o que no estan listos para una revisión, WIP quiere decir &lt;em&gt;Work In Progress&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[RC]&lt;/code&gt;: &lt;em&gt;Resolve Conflicts&lt;/em&gt;, esta etiqueta se utiliza para indicar que en ese commit se resolvieron conflictos entre ramas, se debe indicar la rama con la que se tuvo comflicto denotando en el mensaje con
+la palabra &lt;code class=&quot;highlighter-rouge&quot;&gt;FROM:&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;TODO:&lt;/code&gt;: Indica lo que hay que hacer o falta en un commit que se esta trabajando&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ejemplos&quot;&gt;Ejemplos:&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;[WIP] Changes over README TODO: Finish the requirements especifications and contributors&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&quot;[RC] Resolve conflicts on README file FROM: eldeibid/123456-change-readme&quot;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;pull-request&quot;&gt;Pull Request&lt;/h1&gt;
+&lt;p&gt;Los Pull Request(PR) deben ir documentados en lenguaje markdown que es el que ocupa Github por defecto, se deben tener las siguientes secciones en el PR&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Related task&lt;/strong&gt; : En esta sección debe tener el nombre de la tarea tal y como aparece en Teamwork y el link hacia la misma&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* [Crear documentacion de creacion de ramas y PR](https://mellow.teamwork.com/#tasks/6913838)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Issue description&lt;/strong&gt;: En esta sección se debe describir detalladamente el problema por el cuál surge la tarea, se debe ser lo más descriptivo posible en este punto, el uso de imagenes o
+contenido multimedia es muy recomendable y en muchos casos obligado.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Solution description&lt;/strong&gt;: Esta sección describe detalladamente lo que se llevo a cabo para solucionar el problema, de igual manera el uso de multimedia es muy recomendable y en muchos casos obligado&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Tests&lt;/strong&gt;: En esta sección se deben colocar los pasos que se deben llevar a cabo para probar la solución así como los datos qeu se requieren para la misma en caso de que haya un revizor externo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Las secciones anteriores son obligatorias y se determinará si se puede prescindir o agregar de alguna en caso de que la tarea así lo requiera&lt;/p&gt;</content><category term="consulting" /><category term="guide" /><category term="git" /><category term="workflow" /><summary type="html">Como documentar commits, Pull Request y ramas</summary></entry><entry><title type="html">Como gestionar un proyecto con Teamwork</title><link href="https://devmellow.github.io//teamwork-workflow/" rel="alternate" type="text/html" title="Como gestionar un proyecto con Teamwork" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>https://devmellow.github.io//teamwork-workflow</id><content type="html" xml:base="https://devmellow.github.io//teamwork-workflow/">&lt;h1 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h1&gt;
 &lt;p&gt;Teamwork es la herramienta para gestión de tareas que ocupamos en Teamwork, en esta guia se tratarán la gestión desde 2 perfiles en el equipo,
 la parte administrativa y la del equipo de desarrollo, si bien las 2 conviven en la gestión de trabajo los procesos y responsabilidades son un poco diferentes en
 el flujo de trabajo.&lt;/p&gt;
@@ -208,7 +264,7 @@ esto depende del flujo acordado para el proyecto.&lt;/p&gt;
   &lt;li&gt;
     &lt;p&gt;El área ejecutante deberá realizar las tareas y colocar comentarios en caso de tener obstáculos, reestimar la tarea, terminarla, desplegarla, etc.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><category term="consulting" /><category term="guide" /><category term="teamwork" /><summary type="html">Como gestionar las tareas de un proyecto con Teamwork para el equipo de Mellow Consulting</summary></entry><entry><title type="html">Estructura de ramas para cada repositorio</title><link href="http://localhost:4000/mellow-workflow/" rel="alternate" type="text/html" title="Estructura de ramas para cada repositorio" /><published>2017-09-28T00:00:00-05:00</published><updated>2017-09-28T00:00:00-05:00</updated><id>http://localhost:4000/mellow-workflow</id><content type="html" xml:base="http://localhost:4000/mellow-workflow/">&lt;h1 id=&quot;flujo-de-trabajo-workflow&quot;&gt;Flujo de trabajo (Workflow)&lt;/h1&gt;
+&lt;/ul&gt;</content><category term="consulting" /><category term="guide" /><category term="teamwork" /><summary type="html">Como gestionar las tareas de un proyecto con Teamwork para el equipo de Mellow Consulting</summary></entry><entry><title type="html">Estructura de ramas para cada repositorio</title><link href="https://devmellow.github.io//mellow-workflow/" rel="alternate" type="text/html" title="Estructura de ramas para cada repositorio" /><published>2017-09-28T00:00:00-05:00</published><updated>2017-09-28T00:00:00-05:00</updated><id>https://devmellow.github.io//mellow-workflow</id><content type="html" xml:base="https://devmellow.github.io//mellow-workflow/">&lt;h1 id=&quot;flujo-de-trabajo-workflow&quot;&gt;Flujo de trabajo (Workflow)&lt;/h1&gt;
 &lt;p&gt;El flujo propuesto de trabajo para el equipo en cuánto al uso de los repositorios es el propuesto por Github, este flujo es llamado
 &lt;a href=&quot;https://guides.github.com/introduction/flow/&quot;&gt;GithubFlow&lt;/a&gt;. Este flujo propone el usar &lt;em&gt;forks&lt;/em&gt; y una única rama &lt;em&gt;master&lt;/em&gt;.
 El flujo que usaremos propone que cada miembro del equipo tenga su &lt;em&gt;fork&lt;/em&gt; y en vez de usar una rama &lt;em&gt;master&lt;/em&gt; en cada proyecto, este tenga 2, &lt;em&gt;master&lt;/em&gt; y &lt;em&gt;staging&lt;/em&gt;.&lt;/p&gt;
