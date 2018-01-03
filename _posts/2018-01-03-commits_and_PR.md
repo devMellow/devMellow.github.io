@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Convenciones para ramas, commits y PR"
-date: 2017-10-09
-excerpt: "Como documentar commits, Pull Request y ramas"
+title: "Convenciones para ramas, commits, PR y comentarios de Teamwork"
+date: 2018-01-03
+excerpt: "Como documentar commits, Pull Request, ramas y meta tags para comentarios"
 tags: [consulting, guide, git, workflow]
 comments: false
 ---
