@@ -56,3 +56,28 @@ contenido multimedia es muy recomendable y en muchos casos obligado.
 
 Las secciones anteriores son obligatorias y se determinará si se puede prescindir o agregar de alguna en caso de que la tarea así lo requiera
 
+# Meta etiquetas para teamwork
+## Despliegue
+Esta son meta etiquetas qeu se deben poner en los comentarios de Teamwork en caso de:
+* `[DS]`: Despliegue a staging
+* `[DP]`: Despliegue a producción
+* `[PR]`: Indicar la liga del pull request
+* `[MR]`: Indica que se hizo merge del PR a una rama, se debe indicar la rama en el comentario
+* `[PRI]`: Indicar que es un pull request de integración, por ejemplo cuando se van a pasar cambios de la rama staging a master
+
+### Ejemplo
+```
+* [PR] https://github.com/devMellow/juslab/pull/62
+
+* [DD] Listo en desarrollo
+
+* [MR] Hacia QA
+
+```
+
+La mayoria de las tareas de desarrollo deberían llevar por lo menos las 3 primeras indicando el url de pull request, el momento en el que se hizo desplieguea desarrollo y a producción.
+
+Estas meta etiquetas sirven a los revisores para ubicar de una manera más rápida estos 3 momentos de la tarea, así como en las notificaciones por mail o móvil.
+
+Estas meta etiquetas son obligatorias para los casos y tareas que se ocupen.
+

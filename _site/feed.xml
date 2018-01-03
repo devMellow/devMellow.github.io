@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://devmellow.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://devmellow.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://devmellow.github.io//" rel="alternate" type="text/html" /><updated>2018-01-03T13:30:39-06:00</updated><id>https://devmellow.github.io//</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Convenciones para ramas, commits y PR</title><link href="https://devmellow.github.io//commits_and_PR/" rel="alternate" type="text/html" title="Convenciones para ramas, commits y PR" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>https://devmellow.github.io//commits_and_PR</id><content type="html" xml:base="https://devmellow.github.io//commits_and_PR/">&lt;h1 id=&quot;ramas&quot;&gt;Ramas&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://devmellow.github.io//feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="https://devmellow.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://devmellow.github.io//" rel="alternate" type="text/html" /><updated>2018-01-03T13:55:29-06:00</updated><id>https://devmellow.github.io//</id><title type="html">Mellow Consulting Development</title><subtitle>This is a site for development guides, tips and tricks for Mellow Developers</subtitle><entry><title type="html">Convenciones para ramas, commits y PR</title><link href="https://devmellow.github.io//commits_and_PR/" rel="alternate" type="text/html" title="Convenciones para ramas, commits y PR" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>https://devmellow.github.io//commits_and_PR</id><content type="html" xml:base="https://devmellow.github.io//commits_and_PR/">&lt;h1 id=&quot;ramas&quot;&gt;Ramas&lt;/h1&gt;
 &lt;p&gt;Siguiendo el flujo de desarrollo que se basa en github flow en donde se crea un fork del proyecto y se hacen ramas de donde se sacan los PR el nombre de las ramas que
 se debe seguir en el equpo de desarrollo es el siguiente.&lt;/p&gt;
 
@@ -54,7 +54,34 @@ contenido multimedia es muy recomendable y en muchos casos obligado.&lt;/li&gt;
   &lt;li&gt;&lt;strong&gt;Tests&lt;/strong&gt;: En esta sección se deben colocar los pasos que se deben llevar a cabo para probar la solución así como los datos qeu se requieren para la misma en caso de que haya un revizor externo&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Las secciones anteriores son obligatorias y se determinará si se puede prescindir o agregar de alguna en caso de que la tarea así lo requiera&lt;/p&gt;</content><category term="consulting" /><category term="guide" /><category term="git" /><category term="workflow" /><summary type="html">Como documentar commits, Pull Request y ramas</summary></entry><entry><title type="html">Como gestionar un proyecto con Teamwork</title><link href="https://devmellow.github.io//teamwork-workflow/" rel="alternate" type="text/html" title="Como gestionar un proyecto con Teamwork" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>https://devmellow.github.io//teamwork-workflow</id><content type="html" xml:base="https://devmellow.github.io//teamwork-workflow/">&lt;h1 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h1&gt;
+&lt;p&gt;Las secciones anteriores son obligatorias y se determinará si se puede prescindir o agregar de alguna en caso de que la tarea así lo requiera&lt;/p&gt;
+
+&lt;h1 id=&quot;meta-etiquetas-para-teamwork&quot;&gt;Meta etiquetas para teamwork&lt;/h1&gt;
+&lt;h2 id=&quot;despliegue&quot;&gt;Despliegue&lt;/h2&gt;
+&lt;p&gt;Esta son meta etiquetas qeu se deben poner en los comentarios de Teamwork en caso de:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[DS]&lt;/code&gt;: Despliegue a staging&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[DP]&lt;/code&gt;: Despliegue a producción&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[PR]&lt;/code&gt;: Indicar la liga del pull request&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[MR]&lt;/code&gt;: Indica que se hizo merge del PR a una rama, se debe indicar la rama en el comentario&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;[PRI]&lt;/code&gt;: Indicar que es un pull request de integración, por ejemplo cuando se van a pasar cambios de la rama staging a master&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ejemplo-1&quot;&gt;Ejemplo&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* [PR] https://github.com/devMellow/juslab/pull/62
+
+* [DD] Listo en desarrollo
+
+* [MR] Hacia QA
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;La mayoria de las tareas de desarrollo deberían llevar por lo menos las 3 primeras indicando el url de pull request, el momento en el que se hizo desplieguea desarrollo y a producción.&lt;/p&gt;
+
+&lt;p&gt;Estas meta etiquetas sirven a los revisores para ubicar de una manera más rápida estos 3 momentos de la tarea, así como en las notificaciones por mail o móvil.&lt;/p&gt;
+
+&lt;p&gt;Estas meta etiquetas son obligatorias para los casos y tareas que se ocupen.&lt;/p&gt;</content><category term="consulting" /><category term="guide" /><category term="git" /><category term="workflow" /><summary type="html">Como documentar commits, Pull Request y ramas</summary></entry><entry><title type="html">Como gestionar un proyecto con Teamwork</title><link href="https://devmellow.github.io//teamwork-workflow/" rel="alternate" type="text/html" title="Como gestionar un proyecto con Teamwork" /><published>2017-10-09T00:00:00-05:00</published><updated>2017-10-09T00:00:00-05:00</updated><id>https://devmellow.github.io//teamwork-workflow</id><content type="html" xml:base="https://devmellow.github.io//teamwork-workflow/">&lt;h1 id=&quot;teamwork&quot;&gt;Teamwork&lt;/h1&gt;
 &lt;p&gt;Teamwork es la herramienta para gestión de tareas que ocupamos en Teamwork, en esta guia se tratarán la gestión desde 2 perfiles en el equipo,
 la parte administrativa y la del equipo de desarrollo, si bien las 2 conviven en la gestión de trabajo los procesos y responsabilidades son un poco diferentes en
 el flujo de trabajo.&lt;/p&gt;
